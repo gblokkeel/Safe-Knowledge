@@ -54,6 +54,7 @@ const CONTENT_INDEX = [
   { id: "events/sprint-retrospective", title: "Sprint Retrospective",        category: "Events & Ceremonies", icon: "🔁", file: "content/events/sprint-retrospective.md" },
 
   // Artifacts
+  { id: "artifacts/epics-features-stories", title: "Epics → Features → Stories", category: "Artifacts",       icon: "🗂️", file: "content/artifacts/epics-features-stories.md" },
   { id: "artifacts/pi-objectives",     title: "PI Objectives",               category: "Artifacts",       icon: "🎯", file: "content/artifacts/pi-objectives.md" },
   { id: "artifacts/program-backlog",   title: "Program Backlog",             category: "Artifacts",       icon: "📝", file: "content/artifacts/program-backlog.md" },
   { id: "artifacts/program-board",     title: "Program Board",               category: "Artifacts",       icon: "📌", file: "content/artifacts/program-board.md" },
