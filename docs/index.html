@@ -163,7 +163,7 @@
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', async () => {
         try {
-          const reg = await navigator.serviceWorker.register('/website/sw.js', { scope: '/' });
+          const reg = await navigator.serviceWorker.register('/Safe-Knowledge-/docs/sw.js', { scope: '/Safe-Knowledge-/docs/' });
           console.log('[PWA] Service Worker registered:', reg.scope);
 
           // Show "Available offline" badge once SW is active
