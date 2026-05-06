@@ -89,6 +89,7 @@ CONTENT_INDEX.forEach(item => {
 let currentArticleId = null;
 let contentCache = {};
 let searchDebounceTimer = null;
+let welcomeHTML = null;
 
 // ──────────────────────────────────────────────────────────────
 // THEME
@@ -388,6 +389,24 @@ function setupWelcomeCards() {
 }
 
 // ──────────────────────────────────────────────────────────────
+// WELCOME PAGE
+// ──────────────────────────────────────────────────────────────
+function showWelcomePage() {
+  if (!welcomeHTML) return;
+  currentArticleId = null;
+  document.getElementById('article-body').innerHTML = welcomeHTML;
+  document.getElementById('article-title').textContent = 'Welcome to the SAFe Knowledge Base';
+  document.getElementById('breadcrumb').innerHTML = '';
+  document.title = 'SAFe Knowledge Base';
+  const url = new URL(window.location);
+  url.searchParams.delete('article');
+  history.pushState({}, '', url);
+  setupWelcomeCards();
+  document.querySelectorAll('.nav-item').forEach(el => el.classList.remove('active'));
+  closeMobileSidebar();
+}
+
+// ──────────────────────────────────────────────────────────────
 // ROUTER (URL-based navigation)
 // ──────────────────────────────────────────────────────────────
 function handleRoute() {
@@ -401,6 +420,8 @@ function handleRoute() {
 window.addEventListener('popstate', (e) => {
   if (e.state && e.state.articleId) {
     loadArticle(e.state.articleId);
+  } else {
+    showWelcomePage();
   }
 });
 
@@ -424,6 +445,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Mobile sidebar
   setupMobileSidebar();
+
+  // Save welcome HTML for logo navigation
+  welcomeHTML = document.getElementById('article-body').innerHTML;
+
+  // Logo click → home
+  const logo = document.querySelector('.logo');
+  if (logo) {
+    logo.style.cursor = 'pointer';
+    logo.addEventListener('click', showWelcomePage);
+  }
 
   // Welcome page cards
   setupWelcomeCards();
