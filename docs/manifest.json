@@ -1,0 +1,86 @@
+{
+  "name": "SAFe Knowledge Base",
+  "short_name": "SAFe KB",
+  "description": "Comprehensive Scaled Agile Framework knowledge base — all SAFe articles, principles, roles, and events.",
+  "start_url": "/Safe-Knowledge-/docs/index.html",
+  "scope": "/Safe-Knowledge-/docs/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#1e2a3a",
+  "theme_color": "#1e2a3a",
+  "lang": "en",
+  "categories": ["education", "productivity", "business"],
+  "icons": [
+    {
+      "src": "icons/icon-72.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icons/icon-96.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icons/icon-128.png",
+      "sizes": "128x128",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icons/icon-144.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icons/icon-152.png",
+      "sizes": "152x152",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icons/icon-180.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "PI Planning",
+      "short_name": "PI Planning",
+      "description": "Open PI Planning article",
+      "url": "/Safe-Knowledge-/docs/index.html?article=events/pi-planning",
+      "icons": [{ "src": "icons/icon-96.png", "sizes": "96x96" }]
+    },
+    {
+      "name": "SAFe Principles",
+      "short_name": "Principles",
+      "description": "Open SAFe Principles overview",
+      "url": "/Safe-Knowledge-/docs/index.html?article=principles/safe-principles-overview",
+      "icons": [{ "src": "icons/icon-96.png", "sizes": "96x96" }]
+    },
+    {
+      "name": "Roles",
+      "short_name": "Roles",
+      "description": "Open Roles section",
+      "url": "/Safe-Knowledge-/docs/index.html?article=roles/release-train-engineer",
+      "icons": [{ "src": "icons/icon-96.png", "sizes": "96x96" }]
+    }
+  ]
+}
