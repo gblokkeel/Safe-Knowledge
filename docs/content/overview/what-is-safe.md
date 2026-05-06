@@ -2,7 +2,7 @@
 
 ## Overview
 
-The **Scaled Agile Framework® (SAFe®)** is an online knowledge base of proven, integrated principles and practices for Lean-Agile development. It provides comprehensive guidance for work at the Enterprise, Portfolio, Value Stream, Program, and Team levels of an organization.
+This Website **Scaled Agile Framework® (SAFe®)** is an online knowledge base of proven, integrated principles and practices for Lean-Agile development. It provides comprehensive guidance for work at the Enterprise, Portfolio, Value Stream, Program, and Team levels of an organization.
 
 SAFe helps organizations scale Agile practices from individual teams to the entire enterprise, enabling them to deliver value faster, with higher quality and greater predictability, while improving employee engagement.
 
