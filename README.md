@@ -4,7 +4,7 @@ A comprehensive, structured knowledge base covering the **Scaled Agile Framework
 
 ## Live Site
 
-**https://gblokkeel.github.io/Safe-Knowledge/docs/**
+**https://gblokkeel.github.io/Safe-Knowledge/**
 
 ## Repository Structure
 
